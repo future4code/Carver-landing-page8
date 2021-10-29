@@ -5,6 +5,9 @@
 <!-- Vou adcionar no final -->
 ## Header 
  - Logo da empresa e um menu horizontal para o usuário navegar.
+
+## Main
+- colocar prints
  
 ## Footer
  - Footer simples com algumas informações sobre contado.
