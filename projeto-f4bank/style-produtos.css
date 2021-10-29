@@ -119,6 +119,12 @@ Estilo footer
 
 */ 
 
+/*
+
+Estilo footer
+
+*/ 
+
 #container-footer {
     background-color: #ff914d;
     height: 100%;
@@ -126,6 +132,7 @@ Estilo footer
     flex-direction: row;
     justify-content: space-around;
     padding-left: 5.5px;
+    padding-top: 10px;
     text-align: center;
     
 }
@@ -136,7 +143,7 @@ Estilo footer
 }
 
 .imagem{
-    width: 25px;
+    width: 20px;
     margin-right: 7.5px;
 }
 
@@ -146,6 +153,7 @@ Estilo footer
     justify-content: end;
 }
 
+/*
 
 
 /*
@@ -181,6 +189,11 @@ Estilo main responsivo
 
 }
 
+/*
+
+Estilo footer responsivo
+
+*/
 /*
 
 Estilo footer responsivo

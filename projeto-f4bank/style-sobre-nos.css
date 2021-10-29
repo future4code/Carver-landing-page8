@@ -1,9 +1,8 @@
 
-
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Zen Maru Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight:normal;
     font-size: 16px;
 }
@@ -22,7 +21,7 @@ body {
 
 /*
 
-Estilo header
+Estilo Header
 
 */
 
@@ -38,7 +37,7 @@ Estilo header
 
 #container-header img {
     height: 60%;
-    /* width: 150px */
+    width: 150px
     
 }
 
@@ -70,36 +69,55 @@ Estilo header
 
 }
 
-#foto-mulher-celular{
-  width: 100%;
+/*
+
+Estilo Main
+
+*/
+
+#container-main {
+    background-color: #ffbd59;
+    display: flex;
+    flex-direction: column;
 }
 
-#foto-dupla{
+#conteudo-sobre-nos img {
     width: 100%;
+    height: 100%;
 }
 
-#conteudo{
+#historia-empresa {
     background-color: #ffbd59;
-    color: white;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+#historia-empresa h1 {
+    display: block;
+    margin-top: 1.5%;
+    padding: 10px;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+#historia-empresa h2 {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#historia-empresa p {
+    display: block;
+    background-color: #fab34a91;
+    border-radius: 20px;
+    margin: 2.5% 25%;
+    width: 50%;
+    padding: 10px;
+    color: rgb(255, 255, 255);
 }
 
 
-@media screen and (max-width: 768px) and (min-width: 320px) {
-    .texto-dupla{
-        top:91%;
-        font-size: 180%;
-    }
-}
-
-
-#historia-empresa{
-    margin: 0% 0% 0% 0%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:normal;
-    background-color: #ffbd59;
-   color: #fff;
-   text-align: center;
-}
 /*
 
 Estilo footer
@@ -108,19 +126,70 @@ Estilo footer
 
 #container-footer {
     background-color: #ff914d;
-    padding: 1%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5.5px;
+    padding-top: 10px;
     text-align: center;
+    
 }
 
 #container-footer p {
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
 }
 
 .imagem{
     width: 20px;
-    padding: 6px;
-    justify-content: space-around;
+    margin-right: 7.5px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+/*
+
+Estilo Main responsivo
+
+*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
+    #historia-empresa {
+        background-color: #ffbd59;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #historia-empresa h1 {
+        display: block;
+        margin-top: 1.5%;
+        padding: 10px;
+        font-size: 26px;
+        font-weight: bolder;
+        color: #ffffff;
+    }
+    
+    #historia-empresa h2 {
+        font-size: 16px;
+        color: #ffffff;
+    }
+    
+    #historia-empresa p {
+        display: block;
+        background-color: #fab34a91;
+        width: 85%;
+        border-radius: 20px;
+        margin: 5%;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+    }
+
 }
 
 /*
@@ -138,10 +207,20 @@ Estilo footer responsivo
     
     #container-footer p {
         font-size: 10px;
-    }
-
-    }
-
-
+    }}
 
     
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .texto-dupla{
+        top:95%;
+        font-size: 180%;
+    }
+
+    .imagem{
+        width: 15px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+
+

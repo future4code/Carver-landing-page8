@@ -1,18 +1,28 @@
-
-
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Zen Maru Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight:normal;
     font-size: 16px;
 }
+
+/*
+
+Estilo Layout
+
+*/
 
 body {
     display: grid;
     grid-template-rows: 135px 1fr 35px;
     min-height: 100vh;
 }
+
+/*
+
+Estilo Header
+
+*/
 
 #container-header {
     background-color: #ff914d ;
@@ -58,47 +68,29 @@ body {
 
 }
 
-#foto-mulher-celular{
-  width: 100%;
+/*
+
+Estilo Main
+
+*/
+
+#container-main-form {
+    background-color: #ffbd59;
+   
 }
 
-#container-footer {
-    background-color: #ff914d;
-    padding: 1%;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    height: 60px;
-}
-
-#container-footer p {
-    font-size: 12px;
-    color: #fff;
-}
-
-.imagem{
-    width: 20px;
-    padding: 6px;
-    justify-content: space-around;
-}
-.redes-sociais{
-    flex: 1;
+#container-formulario h1 {
+    margin: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
 form {
-    font-family: Verdana,Tahoma,sans-serif;
     font-size: 15px;
     background-color: #ffbd59;
     max-width: 500px;
     display: grid;
-}
-
-h1 {
-    margin-bottom: 35px;
-    margin-left: 30px;
-    margin-top: 20px;
-    color: white;
-    text-shadow: 5px 5px 5px white;
 }
 
 input, textarea {
@@ -125,17 +117,6 @@ input, textarea {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
-/* input:hover, textarea:hover, input:focus, textarea:focus {
-    border-color: white
-    box-shadow:5px 0px 9px #FFFF00;
-    background-color: #F
-    color:black;
-    font-weight: bold;
-} */
-
-main{
-background-color: #ffbd59;
 }
 
 .enviar {
@@ -161,4 +142,72 @@ form label {
     margin-left: 20px;
     color: #FFFFFF;
     font-weight: bold;
+}
+
+
+/*
+
+Estilo Footer
+
+*/
+
+
+#container-footer {
+    background-color: #ff914d;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5.5px;
+    padding-top: 10px;
+    text-align: center;
+    
+}
+
+#container-footer p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.imagem{
+    width: 20px;
+    margin-right: 7.5px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+/*
+
+Estilo footer responsivo
+
+*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
+
+    #container-footer {
+        padding: 1.5%;
+    }
+    
+    #container-footer p {
+        font-size: 10px;
+    }}
+
+    
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .texto-dupla{
+        top:95%;
+        font-size: 180%;
+    }
+
+    .imagem{
+        width: 15px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
 }
