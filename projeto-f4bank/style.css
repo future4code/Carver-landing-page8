@@ -17,6 +17,8 @@ body {
     min-height: 100vh;
 }
 
+
+
 /*
 
 Estilo header
@@ -35,7 +37,7 @@ Estilo header
 
 #container-header img {
     height: 60%;
-    width: 150px
+    /* width: 150px */
     
 }
 
@@ -53,7 +55,7 @@ Estilo header
 }
 
 #menu-horizontal a {
-    padding: 2.5px 3px;
+    padding: 2.5px 0px;
     text-decoration: none;
     color: #ffffff;
 
@@ -67,6 +69,24 @@ Estilo header
 
 }
 
+#foto-mulher-celular{
+    /* width: 55vh;
+    position: relative;
+    margin-top: -27vh;
+    left: 1vh; */
+}
+
+.titulo-sobre-empresa{
+    /* position: relative;
+    left: 18px;
+    top: 30vh; */
+}
+
+.paragrafo-intro-empresa{
+    /* position: relative;
+    left: 18px;
+    top: 196px; */
+}
 /*
 
 Estilo footer
