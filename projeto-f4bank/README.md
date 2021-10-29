@@ -2,6 +2,7 @@
 
 # Site de apresentação sobre empresa fictícia, nele é possível encontrar uma descriação sobre a empresa e sobre seus produtos.
 
+<!-- Vou adcionar no final -->
 ## Header 
  - Logo da empresa e um menu horizontal para o usuário navegar.
  

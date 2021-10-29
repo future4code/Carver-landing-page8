@@ -24,8 +24,6 @@ body {
     min-height: 100vh;
 }
 
-
-
 /*
 
 Estilo header
@@ -89,58 +87,23 @@ Estilo header
     color: white;
 }
 
-.texto-dupla{
-    font-family: 'Balow', sans-serif;
-    font-size: 100px;
-    margin: 0% 0% 0% 4%;
-    position: absolute;
-    top: 200%;
-
-    
-}
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
     .texto-dupla{
-        top:95%;
+        top:91%;
         font-size: 180%;
     }
 }
 
 
-
-.titulo-sobre-empresa{
-   margin: 1% 0% 0% 2%;
-   font-family: 'Montserrat', sans-serif;
-   font-weight:normal;
-   font-size: 23px;
-}
-
-.paragrafo-intro-empresa{
-    margin: 0% 0% 0% 2%;
+#historia-empresa{
+    margin: 0% 0% 0% 0%;
     font-family: 'Montserrat', sans-serif;
     font-weight:normal;
-    font-size: 16px;
+    background-color: #ffbd59;
+   color: #fff;
+   text-align: center;
 }
-
-
-.conteudo-saiba-mais{
-    position: absolute;
-    top:245%;
-    left: 85%;
-    color: #fff;
-}
-@media screen and (max-width: 768px) and (min-width: 320px) {
-    .conteudo-saiba-mais{
-        top:106%;
-        left: 75%;
-    }
-}
-
-#sobre-a-empresa{
-    display: flex;
-    flex-direction: column;
-}
-
 /*
 
 Estilo footer
@@ -151,9 +114,6 @@ Estilo footer
     background-color: #ff914d;
     padding: 1%;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    height: 60px;
 }
 
 #container-footer p {
@@ -165,9 +125,6 @@ Estilo footer
     width: 20px;
     padding: 6px;
     justify-content: space-around;
-}
-.redes-sociais{
-    flex: 1;
 }
 
 /*
@@ -185,4 +142,10 @@ Estilo footer responsivo
     
     #container-footer p {
         font-size: 10px;
-    }}
+    }
+
+    }
+
+
+
+    
