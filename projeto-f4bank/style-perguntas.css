@@ -70,8 +70,6 @@ body {
     background-color: #ff914d;
     padding: 1%;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
     height: 60px;
 }
 
@@ -142,7 +140,30 @@ main{
 background-color: #ffbd59;
 }
 
-.enviar {
+.questao {
+    margin: 18px;
+    border-bottom: 1px solid #ff914d;
+    padding: 18px 0
+  }
+  
+  .questao input,
+  .questao .resposta { display: none }
+  
+  .questao label {
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%
+  }
+  
+  .questao input:checked ~ .resposta {
+      color: #fff;
+    display: block
+  }
+
+
+/* .enviar {
     background-color: white;
     height: 40px;
     width: 100px;
@@ -152,7 +173,7 @@ background-color: #ffbd59;
     -moz-border-radius: 5px;
     border: 1px solid;
     color: black;
-}
+} */
 
 textarea {
     width: 400px;

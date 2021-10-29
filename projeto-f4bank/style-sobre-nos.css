@@ -74,7 +74,7 @@ Estilo header
 
 }
 
-#foto-mulher-celular{
+#foto-homem-logo{
   width: 100%;
 }
 
@@ -114,6 +114,7 @@ Estilo footer
     background-color: #ff914d;
     padding: 1%;
     text-align: center;
+    height: 60px;
 }
 
 #container-footer p {

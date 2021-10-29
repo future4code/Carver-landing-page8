@@ -151,8 +151,6 @@ Estilo footer
     background-color: #ff914d;
     padding: 1%;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
     height: 60px;
 }
 
