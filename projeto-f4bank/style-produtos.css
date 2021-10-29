@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/*
+
+Estilo Layout
+
+*/
+
+body {
+    display: grid;
+    grid-template-rows: 135px 1fr 35px;
+    min-height: 100vh;
+}
+
+/*
+
+Estilo header
+
+*/
+
+#container-header {
+    background-color: #ff914d ;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo-menu {
+    text-align: center;
+}
+
+#container-header img {
+    height: 60%;
+    width: 150px 
+    
+}
+
+#menu-horizontal ul {
+    display: inline;
+    padding: 2.5px;
+    font-weight: bold;
+    color: #fff;
+} 
+#menu-horizontal ul li{
+    display: inline;
+    padding: 2.5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#menu-horizontal a {
+    padding: 2.5px 0px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+#menu-horizontal a:hover {
+    background-color: #ffbd59 ;
+    padding: 3.5px 4px;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+/*
+
+Estilo Main
+
+*/
+
+.div2{
+    display: grid;
+    grid-template-columns: 420px 1fr 1fr 1fr;
+    height: 100vh;
+    gap: 20px 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+#div-lateral{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffbd59;
+    padding: 10px;
+    height: 100vh;
+    justify-content: center;
+}
+
+#icones{
+    width: 100px;
+    margin-left: 35%;
+    margin-bottom: 10px;
+}
+
+h1{
+    margin: 10px;
+    font-size: x-large;
+}
+
+h2{
+    background-color: #ffbd5978;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h3{
+    margin: 10px;
+}
+
+
+/*
+
+Estilo footer
+
+*/ 
+
+#container-footer {
+    background-color: #ff914d;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5.5px;
+    text-align: center;
+    
+}
+
+#container-footer p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.imagem{
+    width: 25px;
+    margin-right: 7.5px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+
+/*
+
+Estilo main responsivo
+
+*/
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+    .div2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px 20px;
+        align-items: center;
+        justify-items: center;
+        min-height: 100vh;
+        padding-bottom: 65px;
+    }
+
+    #div-lateral{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffbd59;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    h2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+/*
+
+Estilo footer responsivo
+
+*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
+
+    #container-footer {
+        padding: 1.5%;
+    }
+    
+    #container-footer p {
+        font-size: 10px;
+    }}
+
+    
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .texto-dupla{
+        top:95%;
+        font-size: 180%;
+    }
+
+    .imagem{
+        width: 15px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
