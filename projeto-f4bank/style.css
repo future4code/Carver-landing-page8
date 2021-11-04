@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:normal;
+    font-size: 16px;
+}
+
+/*
+
+Estilo Layout
+
+*/
+
+body {
+    display: grid;
+    grid-template-rows: 135px 1fr 35px;
+    min-height: 100vh;
+}
+
+/*
+
+Estilo header
+
+*/
+
+#container-header {
+    background-color: #ff914d ;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo-menu {
+    text-align: center;
+}
+
+#container-header img {
+    height: 60%;
+    width: 150px 
+    
+}
+
+#menu-horizontal ul {
+    display: inline;
+    padding: 2.5px;
+    font-weight: bold;
+    color: #fff;
+} 
+#menu-horizontal ul li{
+    display: inline;
+    padding: 2.5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#menu-horizontal a {
+    padding: 2.5px 0px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+#menu-horizontal a:hover {
+    background-color: #ffbd59 ;
+    padding: 3.5px 4px;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+/*
+
+Estilo Main
+
+*/
+
+#container-main {
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo-empresa {
+    background-color: #ff914d;
+    color: white;
+}
+
+
+#sobre-empresa img {
+    width: 100%;
+    height: 100%;
+}
+
+#chamada-empresa {
+    margin: 5.5px;
+    text-align: center;
+}
+
+#chamada-empresa h1 {
+    padding: 3.5px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#chamada-empresa p {
+    padding: 5.5px;
+    font-size: 12px;
+}
+
+#sobre-nos { 
+    background-color: #ff914d;
+    width: 100%;
+    text-align: center;
+
+}
+
+#sobre-nos img {
+    width: 100%;
+    height: 100%;
+}
+
+#segunda-chamada-empresa {
+    background-color: #ffbd5978;
+    border-radius: 5px;
+    position: relative;
+    top: -500px;
+    left: 25%;
+    margin: 10px;
+    width: 45%;
+    text-align: center;
+}
+
+#segunda-chamada-empresa h1 {
+    display: block;
+    padding: 10px;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+#segunda-chamada-empresa p {
+    text-decoration: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#segunda-chamada-empresa a {
+    text-decoration: #fff;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+
+/*
+
+Estilo footer
+
+*/ 
+
+#container-footer {
+    background-color: #ff914d;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 5.5px;
+    text-align: center;
+    
+}
+
+#container-footer p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.imagem{
+    width: 25px;
+    margin-right: 7.5px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+/*
+
+Estilo main responsivo
+
+*/
+
+.titulo-sobre-empresa{
+   margin-top: 1%;
+   margin-bottom: 2%;
+   font-size: 23px;
+}
+
+.paragrafo-intro-empresa{
+    margin-bottom: 2%;
+    font-size: 16px;
+}
+
+
+.conteudo-saiba-mais{
+    position: absolute;
+    top:245%;
+    left: 85%;
+    color: #fff;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    
+    #sobre-nos { 
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #segunda-chamada-empresa {
+        background-color: #ff914d;
+        border-radius: 5px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 2.2px;
+        width: 100%;
+        
+    }  
+
+    #segunda-chamada-empresa h1 {
+        padding: 7.5px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    #segunda-chamada-empresa p {
+        padding: 5.5px;
+    }
+    
+    #segunda-chamada-empresa a {
+        padding: 5px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    
+
+}
+
+
+/*
+
+Estilo footer responsivo
+
+*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
+
+    #container-footer {
+        padding: 1.5%;
+    }
+    
+    #container-footer p {
+        font-size: 10px;
+    }}
+
+    
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .texto-dupla{
+        top:95%;
+        font-size: 180%;
+    }
+
+    .imagem{
+        width: 15px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}

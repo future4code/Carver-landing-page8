@@ -1,0 +1,147 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight:normal;
+    font-size: 16px;
+}
+
+/*
+
+Estilo Layout
+
+*/
+
+body {
+    display: grid;
+    grid-template-rows: 135px 1fr 35px;
+    min-height: 100vh;
+}
+
+/*
+
+Estilo header
+
+*/
+
+#container-header {
+    background-color: #ff914d ;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo-menu {
+    text-align: center;
+}
+
+#container-header img {
+    height: 60%;
+    /* width: 150px */
+    
+}
+
+#menu-horizontal ul {
+    display: inline;
+    padding: 2.5px;
+    font-weight: bold;
+    color: #fff;
+} 
+#menu-horizontal ul li{
+    display: inline;
+    padding: 2.5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#menu-horizontal a {
+    padding: 2.5px 0px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+#menu-horizontal a:hover {
+    background-color: #ffbd59 ;
+    padding: 3.5px 4px;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+#foto-mulher-celular{
+  width: 100%;
+}
+
+#foto-dupla{
+    width: 100%;
+}
+
+#conteudo{
+    background-color: #ffbd59;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .texto-dupla{
+        top:91%;
+        font-size: 180%;
+    }
+}
+
+
+#historia-empresa{
+    margin: 0% 0% 0% 0%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:normal;
+    background-color: #ffbd59;
+   color: #fff;
+   text-align: center;
+}
+/*
+
+Estilo footer
+
+*/ 
+
+#container-footer {
+    background-color: #ff914d;
+    padding: 1%;
+    text-align: center;
+}
+
+#container-footer p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.imagem{
+    width: 20px;
+    padding: 6px;
+    justify-content: space-around;
+}
+
+/*
+
+Estilo footer responsivo
+
+*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* celulares */
+
+    #container-footer {
+        padding: 1.5%;
+    }
+    
+    #container-footer p {
+        font-size: 10px;
+    }
+
+    }
+
+
+
+    
